@@ -1,0 +1,40 @@
+$yellowCard: #fff000;
+
+html,
+.app {
+  background-color: $yellowCard;
+}
+.navbar {
+  padding: 10px;
+}
+
+ul.glossary {
+  list-style-type: none;
+  padding: 10px;
+  li.word {
+    border: 5px solid black;
+    padding: 10px;
+    margin: 10px 5px;
+    background-color: white;
+    .title {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .voteCount {
+      font-size: 30px;
+    }
+    .btn {
+      border-radius: 50%;
+      background-color: black;
+      color: white;
+      margin-right: 5px;
+      font-size: 20px;
+      transition: .5s;
+      float: left;
+      &:hover {
+        background-color: red;
+      }
+    }
+  }
+}
+

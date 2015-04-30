@@ -1,0 +1,56 @@
+{
+  "name": "glossophilia",
+  "version": "0.0.1",
+  "description": "An dictionary app for folks who don't need a dictionary",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "NODE_ENV=develop webpack-dev-server --devtool eval --hot --progress --colors --port 9000",
+    "deploy": "NODE_ENV=production webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/btburton42/glossophilia.git"
+  },
+  "keywords": [
+    "react",
+    "webpack",
+    "es6",
+    "gulp"
+  ],
+  "author": "Tyler Burton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/btburton42/glossophilia/issues"
+  },
+  "homepage": "https://github.com/btburton42/glossophilia",
+  "dependencies": {
+    "alt": "^0.15.5",
+    "babel": "^5.1.9",
+    "firebase": "^2.2.4",
+    "koa": "^0.19.1",
+    "react": "^0.13.1",
+    "react-router": "^0.13.2"
+  },
+  "devDependencies": {
+    "autoprefixer-core": "^5.1.8",
+    "babel-core": "^5.1.9",
+    "babel-loader": "^5.0.0",
+    "css-loader": "^0.9.1",
+    "csswring": "^3.0.3",
+    "exports-loader": "^0.6.2",
+    "file-loader": "^0.8.1",
+    "gulp": "^3.8.11",
+    "imports-loader": "^0.6.3",
+    "json-loader": "^0.5.1",
+    "node-sass": "^2.1.1",
+    "postcss-loader": "^0.3.0",
+    "raw-loader": "^0.5.1",
+    "react-tools": "^0.13.1",
+    "sass-loader": "^0.6.0",
+    "script-loader": "^0.6.1",
+    "style-loader": "^0.9.0",
+    "url-loader": "^0.5.5",
+    "webpack": "^1.7.3",
+    "webpack-dev-server": "^1.8.0"
+  }
+}

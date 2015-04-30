@@ -14,4 +14,8 @@ npm install; bower install
 npm run dev
 ```
 
-####Prod builds are still TBD
+Then navigate in your browser to `localhost:3001/app/`
+
+####To run the prod environment
+
+Use the files located in the `dist` directory. Or build your own by running the dev install commands above and then `npm run build`.

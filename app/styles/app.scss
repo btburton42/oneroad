@@ -1,3 +1,5 @@
+@import 'fonts';
+
 $yellowCard: #fff000;
 
 html,
@@ -5,7 +7,15 @@ html,
   background-color: $yellowCard;
 }
 .navbar {
-  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  .navbar-list {
+    list-style-type: none;
+    li {
+      display: inline;
+      padding: 25px;
+    }
+  }
 }
 
 ul.glossary {

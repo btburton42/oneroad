@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "id": 0,
+      "url": "assets/rule_0.svg"
+    },
+    {
+      "id": 1,
+      "url": "assets/rule_1.svg"
+    },
+    {
+      "id": 2,
+      "url": "assets/rule_2.svg"
+    }
+  ]
+}

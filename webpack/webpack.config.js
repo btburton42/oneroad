@@ -5,9 +5,7 @@ var bowerPath = __dirname + '/vendor/bower_components';
 var autoprefixer = require('autoprefixer-core');
 var csswring = require('csswring');
 
-resolveBowerPath = function(componentPath) {
-  return path.join(bowerPath, componentPath);
-};
+
 
 // setup environmental variables
 if (process.env.NODE_ENV == 'production') {
@@ -80,8 +78,8 @@ module.exports = {
       lodash: resolveBowerPath('lodash/lodash.js'),
       bootstrap_sass: resolveBowerPath('bootstrap-sass/assets/stylesheets/_bootstrap.scss')
     },
-    extensions: ['', '.js', '.scss', 'hbs', 'tmpl', 'svg', 'woff', 'eot', 'svg', 'png'],
-    modulesDirectories: ['src', 'node_modules', 'web_modules', bowerPath]
+    extensions: ['', '.js', '.scss', 'svg', 'woff', 'eot', 'png'],
+    modulesDirectories: ['app', 'node_modules', 'web_modules', bowerPath]
   },
 
   postcss: [autoprefixer({ browsers: '> 5%, Last 2 version, iOS 7' })],

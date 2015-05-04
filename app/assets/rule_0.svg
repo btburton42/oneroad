@@ -12,7 +12,7 @@
 		C167.215,21.7,179.879,21.7,187.689,29.51z"/>
 	<circle fill="none" stroke="#010101" stroke-width="5" cx="229.134" cy="188.563" r="26.399"/>
 	<circle fill="none" stroke="#010101" stroke-width="5" cx="115.997" cy="188.049" r="26.399"/>
-	<polyline fill="none" stroke="#010101" stroke-width="5" stroke-linejoin="round" points="136.91,143.137 204.793,143.479 
+	<polyline fill="none" stroke="#010101" stroke-width="5" stroke-linejoin="round" points="136.91,143.137 204.793,143.479
 		228.791,188.049 182.851,188.049 134.853,155.479 	"/>
 	<path fill="#010101" d="M139.518,116.426c-3.687,0-6.474-0.082-9.331,4.282c-0.822,1.455-1.198,3.231-0.895,5
 		c0.364,2.011,1.555,3.986,2.958,5.155c1.858,1.548,3.622,1.429,3.336,2.821c-0.365,1.786-1.481,4.268-2.688,8.298
@@ -26,7 +26,7 @@
 	<line fill="#FFFFFF" x1="183.73" y1="186.654" x2="207.003" y2="129.684"/>
 	<line fill="none" stroke="#010101" stroke-width="5" x1="183.73" y1="186.654" x2="207.003" y2="129.684"/>
 	<line fill="#FFFFFF" x1="173.306" y1="168.472" x2="192.215" y2="208.473"/>
-	
+
 		<line fill="none" stroke="#010101" stroke-width="5" stroke-linecap="round" x1="173.306" y1="168.472" x2="192.215" y2="208.473"/>
 	<ellipse fill="none" stroke="#010101" stroke-width="5" cx="183.108" cy="188.135" rx="10.371" ry="10.714"/>
 	<line fill="#FFFFFF" x1="168.258" y1="169.699" x2="180.68" y2="169.812"/>

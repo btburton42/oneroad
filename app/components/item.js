@@ -30,7 +30,7 @@ export default React.createClass({
   renderSVG() {
     const {id}: string = this.context.router.getCurrentParams();
     this.item = this.props.items[id];
-    this.classString = 'svg-container-' + this.item.id;
+    this.classString = 'svg-rule-' + this.item.id;
 
     this.SVGcanvas = new Vivus(React.findDOMNode(this), {type: 'delayed', duration: 100, file: this.item.url});
   },
@@ -42,7 +42,7 @@ export default React.createClass({
 
   render() {
     return (
-      <div onClick={this.replaySVG.bind(null, this)} className={this.classString}></div>
+      <div className={this.classString}></div>
     );
   }
 });

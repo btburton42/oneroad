@@ -29,7 +29,9 @@ export default React.createClass({
     const props: Object = objectAssign(this.state, this.props);
     return (
       <div className="app">
-        <RouteHandler {...props} />
+        <div className="svg-container">
+          <RouteHandler {...props} />
+        </div>
         <Header {...props}/>
       </div>
     );

@@ -6,6 +6,7 @@ html,
 .app {
   background-color: $yellowCard;
 }
+
 .navbar {
   position: absolute;
   bottom: 0;
@@ -18,33 +19,18 @@ html,
   }
 }
 
-ul.glossary {
-  list-style-type: none;
-  padding: 10px;
-  li.word {
-    border: 5px solid black;
-    padding: 10px;
-    margin: 10px 5px;
-    background-color: white;
-    .title {
-      font-weight: bold;
-      font-size: 20px;
-    }
-    .voteCount {
-      font-size: 30px;
-    }
-    .btn {
-      border-radius: 50%;
-      background-color: black;
-      color: white;
-      margin-right: 5px;
-      font-size: 20px;
-      transition: .5s;
-      float: left;
-      &:hover {
-        background-color: red;
-      }
-    }
+.svg-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+  & > div {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 

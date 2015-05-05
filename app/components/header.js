@@ -23,7 +23,7 @@ export default React.createClass({
   },
 
   onChange(state) {
-    console.log(state);
+    this.setState(this.getInitialState());
   },
 
   showPrevious(id) {
@@ -55,12 +55,15 @@ export default React.createClass({
   render() {
     let {id} = this.context.router.getCurrentParams();
 
+    let item = this.props.items[id];
+    let styles = (item !== undefined) ? {color: item.textColor} : {display: 'none'};
+
     return (
       <div className="navbar">
         <ul className="navbar-list">
-        <li className="icon-backward2" onClick={this.showPrevious.bind(this, id)}></li>
-        <li className="icon-shuffle" onClick={this.toggleShuffle.bind(null, this)}></li>
-        <li className="icon-forward3" onClick={this.showNext.bind(this, id)}></li>
+        <li className="icon-previous" style={styles} onClick={this.showPrevious.bind(this, id)}></li>
+        <li className="icon-shuffle" style={styles} onClick={this.toggleShuffle.bind(null, this)}></li>
+        <li className="icon-next" style={styles} onClick={this.showNext.bind(this, id)}></li>
         </ul>
       </div>
     );

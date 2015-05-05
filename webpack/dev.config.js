@@ -74,11 +74,11 @@ export default {
           loader: 'file'
         },
         {
-          test: /\.(jpe?g|png|gif|woff(2)?|eot|ttf)$/,
+          test: /\.(jpe?g|png|gif|woff(2)?|eot|otf)$/,
           loader: "url?limit=10000&name=[sha512:hash:base64:7].[ext]"
         },
         {
-          test: /\.svg$/,
+          test: /\.(svg|ttf)$/,
           include: path.join(__dirname, '../app/styles/fonts'),
           loader: "file-loader"
         },

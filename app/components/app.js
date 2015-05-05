@@ -22,7 +22,8 @@ export default React.createClass({
   },
 
   onChange(state) {
-    console.log(state);
+    // console.log(state);
+    // <Header {...props}/>
   },
 
   render() {

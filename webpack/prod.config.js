@@ -52,6 +52,11 @@ module.exports = {
         loader: 'url?limit=10000&name=[sha512:hash:base64:7].[ext]!image?optimizationLevel=7&progressive&interlaced'
       },
       {
+        test: /\.(svg)$/,
+        include: path.join(__dirname, '../app/styles/fonts'),
+        loader: "file-loader"
+      },
+      {
         test: /\.js$|.jsx$/,
         exclude: /node_modules/,
         loader: 'babel'

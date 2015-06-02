@@ -10,6 +10,6 @@ export default (
       path='rule/:id'
       handler={require('./components/item')} />
     <NotFoundRoute
-      handler={require('./components/404')} />
+      handler={require('./components/randomItem')} />
   </Route>
 );

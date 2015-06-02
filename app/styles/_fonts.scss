@@ -1,5 +1,6 @@
 //fonts
 $font_0: icomoon;
+$font_1: Airstream;
 
 //urls
 $url_0: url(fonts/icomoon.eot);
@@ -7,6 +8,13 @@ $url_1: url(fonts/icomoon.eot);
 $url_2: url(fonts/icomoon.woff);
 $url_3: url(fonts/icomoon.ttf);
 $url_4: url(fonts/icomoon.svg);
+
+$url_5: url(fonts/Airstream.woff);
+$url_6: url(fonts/Airstream.ttf);
+
+//other vars
+
+$font_color: #FFFFFF;
 
 @font-face {
 	font-family: $font_0;
@@ -16,6 +24,21 @@ $url_4: url(fonts/icomoon.svg);
 	font-style: normal;
 }
 
+@font-face {
+	font-family: $font_1;
+	src: $url_5 format('woff'), $url_6 format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.canvas-text {
+	font-family: $font_1;
+	font-size: 2.5em;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 [class^="icon-"], [class*=" icon-"] {
 	font-family: $font_0;
 	speak: none;
@@ -23,30 +46,34 @@ $url_4: url(fonts/icomoon.svg);
 	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
-	font-size: 30px;
+	font-size: 2.5em;
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-spinner11:before {
+	content: "\e984";
+}
+
 .icon-menu:before {
 	content: "\e9bd";
 }
+
 .icon-cancel-circle:before {
 	content: "\ea0d";
 }
-.icon-backward2:before {
-	content: "\ea1f";
+
+.icon-next:before {
+	content: "\ea1c";
 }
-.icon-forward3:before {
-	content: "\ea20";
+
+.icon-previous:before {
+	content: "\ea1c";
+	display: inline-block;
+	transform: scaleX(-1);
 }
+
 .icon-shuffle:before {
 	content: "\ea30";
-}
-.icon-arrow-right:before {
-	content: "\ea34";
-}
-.icon-arrow-left:before {
-	content: "\ea38";
 }

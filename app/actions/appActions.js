@@ -3,7 +3,9 @@ import alt from '../utils/alt';
 class AppActions {
   constructor() {
     this.generateActions(
-      'toggleShuffle'
+      'toggleShuffle',
+      'isDisplayed',
+      'isHidden'
     );
   }
 }

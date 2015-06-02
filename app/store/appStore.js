@@ -9,10 +9,21 @@ class AppStore {
     this.navbar = {
       name: 'Glossary List'
     };
+    this.displayed = false;
+    this.shuffle = true;
+  }
+
+  onIsDisplayed() {
+    this.displayed = true;
+  }
+
+  onIsHidden() {
+    this.displayed = false;
   }
 
   onToggleShuffle() {
-    console.log('toggleshuffle');
+    let shuffle = this.shuffle ? false : true;
+    this.shuffle = shuffle;
   }
 
 }

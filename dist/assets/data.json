@@ -2,15 +2,15 @@
   "items": [
     {
       "id": 0,
-      "url": "assets/rule_0.svg"
+      "url": "assets/rule_0.svg",
+      "text": "One Road for All",
+      "textColor": "9400D3"
     },
     {
       "id": 1,
-      "url": "assets/rule_1.svg"
-    },
-    {
-      "id": 2,
-      "url": "assets/rule_2.svg"
+      "url": "assets/rule_1.svg",
+      "text": "For All",
+      "textColor": "36489E"
     }
   ]
 }

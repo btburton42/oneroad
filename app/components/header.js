@@ -49,7 +49,7 @@ export default React.createClass({
   },
 
   toggleShuffle() {
-    return AppActions.toggleShuffle();
+    return this.context.router.transitionTo('randomItem');
   },
 
   render() {
